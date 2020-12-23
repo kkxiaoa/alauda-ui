@@ -66,19 +66,17 @@
       border-color: $input-border-color-primary;
     }
   }
-  &__input.aui-input {
-    &:hover {
-      border-color: $input-border-color-primary;
-    }
+  &__input.aui-input[disabled] {
+    color: $input-placeholder-color;
+    background-color: $input-bg-color-disabled;
+    border-color: $input-border-color;
+    cursor: not-allowed;
   }
 }
 
 aui-select.ng-invalid.ng-dirty,
 .ng-submitted aui-select.ng-invalid {
   .aui-input {
-    &,
-    &:hover {
-      border-color: $color-error;
-    }
+    border-color: $color-error !important;
   }
 }
